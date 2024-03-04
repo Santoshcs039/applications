@@ -31,7 +31,7 @@ pipeline {
                 
                 sh '''
                 cd java-maven-calculator-web-app
-                sudo apt install maven -y
+                sudo apt update && sudo apt install maven -y
                 mvn clean install
                 '''
 
